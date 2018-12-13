@@ -4,22 +4,21 @@
 Web Application Development
 
 ### Assignment Date:  
-(Month Day, Year)
+December 13, 2018
 
 ### Student Name:  
-(First and Last Name)
+Danielle Osdon
 
 ### Project Description:
-(In your own words, briefly describe the assignment.)
+This project is a weather application that utilizes API from APIXU and uses jQuery, AJAX, and JSON-formatted data.
 
 ### View Project:
-(Replace this statement with your Github Page URL that was created when you 
- published the project.)
+https://dfo16.github.io/WeatherChannel/
 
 ### Lessons Learned in the Assignment:
-1. (Briefly describe a lesson/concept learned in this lesson.)
-2. (Briefly describe a lesson/concept learned in this lesson.)
-3. (Briefly describe a lesson/concept learned in this lesson.)
-4. (Briefly describe a lesson/concept learned in this lesson.)
-5. (Briefly describe a lesson/concept learned in this lesson.)
+1. I learned that the API stands for application programming interface. 
+2. API keys are used to track and control how the API is being used. 
+3. API keys are used as unique identifiers and secret tokens for authentication. 
+4. AJAX allows client webpages to quickly interact with web server without reloading the entire webpage. 
+5. AJAX relies on programming languages like JavaScript and data interchange formats like JSON or XML.
 

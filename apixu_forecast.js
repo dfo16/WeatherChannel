@@ -1,8 +1,8 @@
 
 /*
     Program Name:   Seminole Weather Channel
-    Author: 
-    Date: 
+    Author: Danielle Osdon 
+    Date: 12/13/18
     Filename:   apixu_forecast.js
 */
 
@@ -89,10 +89,10 @@
 
         $(document).ready(function(){
            $(':button').click(function(){
-                var message = 'q=' + $('#searchValue').val()+'&days=3';   
+                var message = 'q=' + $('#searchValue').val()+'&days=10';   
                 $.ajax({
                       type: 'GET',
-                      url: 'https://api.apixu.com/v1/forecast.json?key=ADD_YOUR_API_KEY_HERE',
+                      url: 'https://api.apixu.com/v1/forecast.json?key=4c4f6f187b0f4474929205804181312',
                       data: message             
                 })
                 .done(function(json){
@@ -104,6 +104,20 @@
                      $('#Day1High').html("<center>" + json.forecast.forecastday[0].day.maxtemp_f + "</center>");
                      $('#Day2Low').html("<center>" + json.forecast.forecastday[1].day.mintemp_f + "</center>");
                      $('#Day2High').html("<center>" + json.forecast.forecastday[1].day.maxtemp_f + "</center>");        
+                    $('#Day3Low').html("<center>" + json.forecast.forecastday[2].day.mintemp_f + "</center>");
+                     $('#Day3High').html("<center>" + json.forecast.forecastday[2].day.maxtemp_f + "</center>");
+                    $('#Day4Low').html("<center>" + json.forecast.forecastday[3].day.mintemp_f + "</center>");
+                     $('#Day4High').html("<center>" + json.forecast.forecastday[3].day.maxtemp_f + "</center>");
+                     $('#Day5Low').html("<center>" + json.forecast.forecastday[4].day.mintemp_f + "</center>");
+                     $('#Day5High').html("<center>" + json.forecast.forecastday[4].day.maxtemp_f + "</center>");
+                    $('#Day6Low').html("<center>" + json.forecast.forecastday[5].day.mintemp_f + "</center>");
+                     $('#Day6High').html("<center>" + json.forecast.forecastday[5].day.maxtemp_f + "</center>");
+                    $('#Day7Low').html("<center>" + json.forecast.forecastday[6].day.mintemp_f + "</center>");
+                     $('#Day7High').html("<center>" + json.forecast.forecastday[6].day.maxtemp_f + "</center>");        
+
+
+
+
 
                      
                 })
